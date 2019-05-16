@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+}
+.header-logo {
+    width: 220px;
+    height: 47px;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo {
+    width: 220px;
+    height: 68px;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
