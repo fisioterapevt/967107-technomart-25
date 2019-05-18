@@ -33,6 +33,17 @@
       <div class="btn-checkout">
         <a class="checkout-link" href='#'>Оформить заказ</a>
       </div>
+      <!-- Всплывающее окно "Товар добавлен в корзину" -->
+      <section class="add-to-cart">
+        <h3 class="visually-hidden">Модальное окно добавления товара в корзину</h3>
+        <img src="svg/icon-mark.svg" alt="Товар добавлен в корзину">
+        <p class="add-to-cart-text">Товар добавлен в корзину</p>
+        <a class="checkout-link-cart" href='#'>Оформить заказ</a>
+        <button class="continue shopping" type="button">Продолжить покупки</button>
+        <button class="add-to-cart-close" type="button">
+          <img src="svg/icon-close.svg" alt="Закрыть окно">
+        </button>
+      </section>
     </section>
     <!-- Секция средней части header -->
     <section class="header-middle">
@@ -102,6 +113,7 @@
       </iframe>
       <a class="button" href='#'>Заблудились? Напишите нам!</a>
     </section>
+
   </main>
 
   <!-- Футер -->
@@ -159,12 +171,35 @@
         <p>Обратная связь:</p>
         <a class="footer-email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
+      <!-- Форма обратной связи -->
+      <section class="feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form action="#" class="feedback-form" method="post">
+          <label>
+            Ваше имя:
+            <input class="feedback-user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label>
+            Ваш e-mail:
+            <input class="feedback-user-name" type="text" name="email" placeholder="email@example.com">
+          </label>
+          <label>
+            Текст письма:
+            <textarea class="feedback-user-name" name="text" cols="30" rows="10"
+              placeholder="В свободной форме"></textarea>
+          </label>
+          <button class="feedback-btn" type="submit">Отправить</button>
+        </form>
+        <button class="feedback-form-close" type="button">
+          <img src="svg/icon-close.svg" alt="Закрыть форму">
+        </button>
+      </section>
       <div class="footer-developed">
         <p>Разработано — </p>
         <a class="footer-htmlacademy" href="https://htmlacademy.ru">htmlacademy.ru</a>
       </div>
     </section>
-    </footer>
-  </body>
-  
-  </html>
+  </footer>
+</body>
+
+</html>

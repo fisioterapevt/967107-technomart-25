@@ -33,6 +33,17 @@
       <div class="btn-checkout">
         <a class="checkout-link" href='#'>Оформить заказ</a>
       </div>
+      <!-- Всплывающее окно "Товар добавлен в корзину" -->
+      <section class="add-to-cart">
+        <h3 class="visually-hidden">Модальное окно добавления товара в корзину</h3>
+        <img src="svg/icon-mark.svg" alt="Товар добавлен в корзину">
+        <p class="add-to-cart-text">Товар добавлен в корзину</p>
+        <a class="checkout-link-cart" href='#'>Оформить заказ</a>
+        <button class="continue shopping" type="button">Продолжить покупки</button>
+        <button class="add-to-cart-close" type="button">
+          <img src="svg/icon-close.svg" alt="Закрыть окно">
+        </button>
+      </section>
     </section>
     <!-- Секция средней части header -->
     <section class="header-middle">
@@ -182,64 +193,87 @@
 
   <!-- Футер -->
   <footer class="main-footer">
-  <!-- Светлая часть футера -->
-  <section class="footer-light">
-    <!-- Логотип футера -->
-    <div class="footer-logo">
-      <a href="#" class="logo">
-        <img src="svg/logo-technomart.svg" alt="Логотип ТЕХНОМАРТ">
-      </a>
-    </div>
-    <!-- Меню футера верхнее -->
-    <ul class="footer-menu-above">
-      <li><a href="#">Компания</a></li>
-      <li><a href="#">Новости</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-    <!-- Меню футера нижнее -->
-    <ul class="footer-menu-below">
-      <li><a href="#">Материалы</a></li>
-      <li><a href="#">Техника</a></li>
-      <li><a href="#">Инструмент</a></li>
-      <li><a href="#">Спецпредложения</a></li>
-    </ul>
-    <!-- Адрес и телефон в футере -->
-    <div class="footer-address">
-      <address class="address-down">
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78125550505">+7 (812) 555-05-55</a>
-      </address>
-    </div>
-  </section>
-  <!-- Темная часть футера -->
-  <section class="footer-dark">
-    <h2 class="visually-hidden">Контактная информация</h2>
-    <!-- Копирайт -->
-    <div class="copyright">
-      <p> &copy; 2010–2019 Компания «Техномарт»<br>
-        Все права защищены
-      </p>
-    </div>
-    <!-- Социальные сети -->
-    <div class="footer-social">
-      <ul>
-        <li><a href="#" class="social-btn">VK</a></li>
-        <li><a href="#" class="social-btn">facebook</a></li>
-        <li><a href="#" class="social-btn">instagram</a></li>
+    <!-- Светлая часть футера -->
+    <section class="footer-light">
+      <!-- Логотип футера -->
+      <div class="footer-logo">
+        <a href="#" class="logo">
+          <img src="svg/logo-technomart.svg" alt="Логотип ТЕХНОМАРТ">
+        </a>
+      </div>
+      <!-- Меню футера верхнее -->
+      <ul class="footer-menu-above">
+        <li><a href="#">Компания</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
-    </div>
-    <!-- Обратная связь -->
-    <div class="feedback">
-      <p>Обратная связь:</p>
-      <a class="footer-email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </div>
-    <div class="footer-developed">
-      <p>Разработано — </p>
-      <a class="footer-htmlacademy" href="https://htmlacademy.ru">htmlacademy.ru</a>
-    </div>
-  </section>
+      <!-- Меню футера нижнее -->
+      <ul class="footer-menu-below">
+        <li><a href="#">Материалы</a></li>
+        <li><a href="#">Техника</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="#">Спецпредложения</a></li>
+      </ul>
+      <!-- Адрес и телефон в футере -->
+      <div class="footer-address">
+        <address class="address-down">
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a href="tel:+78125550505">+7 (812) 555-05-55</a>
+        </address>
+      </div>
+    </section>
+    <!-- Темная часть футера -->
+    <section class="footer-dark">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <!-- Копирайт -->
+      <div class="copyright">
+        <p> &copy; 2010–2019 Компания «Техномарт»<br>
+          Все права защищены
+        </p>
+      </div>
+      <!-- Социальные сети -->
+      <div class="footer-social">
+        <ul>
+          <li><a href="#" class="social-btn">VK</a></li>
+          <li><a href="#" class="social-btn">facebook</a></li>
+          <li><a href="#" class="social-btn">instagram</a></li>
+        </ul>
+      </div>
+      <!-- Обратная связь -->
+      <div class="feedback">
+        <p>Обратная связь:</p>
+        <a class="footer-email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <!-- Форма обратной связи -->
+      <section class="feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form action="#" class="feedback-form" method="post">
+          <label>
+            Ваше имя:
+            <input class="feedback-user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label>
+            Ваш e-mail:
+            <input class="feedback-user-name" type="text" name="email" placeholder="email@example.com">
+          </label>
+          <label>
+            Текст письма:
+            <textarea class="feedback-user-name" name="text" cols="30" rows="10"
+              placeholder="В свободной форме"></textarea>
+          </label>
+          <button class="feedback-btn" type="submit">Отправить</button>
+        </form>
+        <button class="feedback-form-close" type="button">
+          <img src="svg/icon-close.svg" alt="Закрыть форму">
+        </button>
+      </section>
+      <div class="footer-developed">
+        <p>Разработано — </p>
+        <a class="footer-htmlacademy" href="https://htmlacademy.ru">htmlacademy.ru</a>
+      </div>
+    </section>
   </footer>
 </body>
 
