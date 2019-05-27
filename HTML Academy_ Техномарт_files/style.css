@@ -1,0 +1,697 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: black;
+
+  background-color: #ffffff;
+
+  box-sizing: border-box;
+
+
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+address {
+  font-style: normal;
+}
+
+.ul-style {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li-style {
+  display: inline-flex;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+}
+
+input,
+textarea,
+iframe {
+  border: none;
+}
+
+p {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main-header {
+  background-color: #f2f6f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Стилизация верхнего логотипа, поиска, закладки, корзина, кнопки "Оформить заказ" */
+.top-block {
+  height: 42px;
+  background-color: #293449;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 220px;
+  height: 47px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 17px;
+}
+
+.header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+}
+
+/* Форма поиска */
+
+
+.search input {
+  width: 270px;
+  height: 42px;
+  background-color: #293449;
+}
+
+.search input:hover {
+  background-color: #212a3a;
+}
+
+.search input:focus {
+  background-color: #ffffff;
+}
+
+.search input::before {
+  content: ' ';
+  background-image: url(/svg/icon-search.svg);
+  width: 17px;
+  height: 17px;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+
+.top-block a,
+.top-block input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+/* Общая стилизация  */
+.bookmarks,
+.basket,
+.btn-checkout {
+  width: 150px;
+  height: 42px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Закладки */
+.bookmarks {}
+
+.bookmarks::before {
+  content: ' ';
+  background-image: url(/svg/icon-bookmark.svg);
+  width: 14px;
+  height: 16px;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  padding-right: 13px;
+}
+
+.bookmarks:hover {
+  background-color: #212a3a;
+
+}
+
+.bookmarks:active {
+  background-color: #161d29;
+  opacity: 0.6;
+}
+
+/* Корзина */
+
+.basket::before {
+  content: ' ';
+  background-image: url(/svg/icon-cart.svg);
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  padding-right: 13px;
+}
+
+.basket:hover {
+  background-color: #212a3a;
+}
+
+.basket:active {
+  background-color: #161d29;
+  opacity: 0.6;
+}
+
+.basket:focus {
+  background-color: #ee3643;
+}
+
+/* Кнопка оформления заказа */
+.btn-checkout {
+  background-color: #63a63e;
+}
+
+.btn-checkout:hover {
+  background-color: #5fbb2d;
+}
+
+.btn-checkout:active {
+  background-color: #518534;
+  opacity: 0.5;
+}
+
+/* Описание в хедере h1 телефон, адрес, блок "Войти Регистрация" */
+.header-middle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+/* Заголовок  h1 описание магазина */
+.description {
+  width: 230px;
+  height: 69px;
+
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 23px;
+  text-align: left;
+  color: #ee3643;
+
+  margin-right: 71px;
+
+
+
+  overflow: hidden;
+}
+
+/* Блок адрес и телефон */
+.header-address {
+  display: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-tel {
+  display: flex;
+  justify-content: center;
+
+  width: 270px;
+
+  border: solid 3px #ffffff;
+
+  margin-top: 46px;
+  margin-right: 69px;
+  padding: 13px;
+
+}
+
+.header-tel-link {
+  font-size: 21px;
+  font-weight: 400;
+  color: #e9292a;
+}
+
+.address-top {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #32425c;
+}
+
+/* Войти Регистрация */
+.user-in {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+}
+
+.user-in li {
+
+  background-color: #ffffff;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.check-in-link {
+  margin-left: 10px;
+}
+
+.login-link::before {
+  content: url(/svg/icon-login.svg);
+  padding-right: 14px;
+}
+
+.user-in a:hover {
+  color: #ee3643;
+}
+
+.user-in a:active {
+  opacity: 0.3;
+  color: #000000;
+}
+
+/* Всплывающее окно "Товар добавлен в корзину"  */
+.order-status {
+  width: 620px;
+  height: 282px;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #ee3643;
+  background-color: #ffffff;
+  margin: 91px auto;
+
+}
+
+.order-status-style-white {
+  height: 170px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.order-status-style-gray {
+  height: 112px;
+  background-color: #f1f1f1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.order-status-style-white img {
+  margin-right: 32px;
+  margin-left: 80px;
+}
+
+.order-status p {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+
+}
+
+.order-status a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.continue-shopping,
+.checkout-link-cart {
+  width: 220px;
+  height: 38px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 3px;
+
+}
+
+.continue-shopping {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  background-color: #ffffff;
+
+  margin-left: 20px;
+}
+
+.order-status-close {
+  width: 21px;
+  height: 21px;
+  background-image: url(/svg/icon-close.svg);
+  background-color: #ffffff;
+}
+
+/* Основная навигация */
+.main-navigation {
+  height: 60px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+
+  background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-menu a {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #ffffff;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 31px;
+  margin: auto;
+
+  height: 60px;
+}
+
+.main-menu li:hover {
+  background-color: #1d2739;
+}
+
+.main-menu a:active {
+  opacity: 0.5;
+}
+
+/* Секция "О компании" */
+
+.transport {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Стилизация catalog.html */
+
+/* Хлебные крошки  */
+.breadcrumbs {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  padding-right: 17px;
+  padding-left: 15px;
+}
+
+.breadcrumbs::before {
+  content: url(/svg/icon-home.svg);
+}
+
+.breadcrumbs li::before {
+  content: url(/svg/icon-right-small.svg);
+}
+
+/* Колонка выбора опций товара */
+.tools {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  width: 940px;
+  height: 89px;
+
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+legend {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+fieldset {
+  border: none;
+}
+
+.range-options {
+  width: 220px;
+
+}
+
+.range-options label {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.range-options input[type=submit] {
+  width: 140px;
+  height: 38px;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Карточка товара */
+.catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.catalog-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+}
+
+.catalog-item {
+  width: 220px;
+  height: 318px;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  margin: 20px 20px;
+}
+
+.catalog-item-title {
+  position: absolute;
+
+}
+
+/* Стилизация пагинации */
+
+
+.pagination-list a {
+
+  padding: 13px 15px;
+
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border: solid 1px #e5e5e5;
+  border-radius: 2px;
+  margin-left: 10px;
+  color: #000000;
+
+
+}
+
+.pagination-list a:hover {
+  border: solid 1px #bdc6ca;
+}
+
+.pagination-list a:active {
+  border: solid 1px #ee3643;
+}
+
+.pagination-list a:focus {
+  background-color: #ee3643;
+}
+
+/* Секция "О перфораторах" */
+.about-perforators {
+
+  background-color: #f2f6f8;
+}
+
+.about-perforators h3 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/* Футер */
+.footer-dark {
+  height: 107px;
+  background-color: #293449;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-light {
+  height: 203px;
+  background-color: #32425c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about a,
+.contacts a {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.footer-logo {
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-down p,
+.address-down a,
+.footer-menu-above a,
+.footer-menu-below a {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f3f7f9;
+  background-color: inherit;
+}
+
+.footer-menu-below a {
+  color: #ffd180;
+}
+
+.footer-dark p {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #f3f7f9;
+  background-color: inherit;
+}
+
+.footer-developed a,
+.feedback-email a {
+  font-size: 16px;
+  color: #ffd180;
+}
+
+.footer-social li {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #212a3a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Форма обратной связи */
+.feedback {
+  width: 620px;
+  height: 430px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.feedback-style {
+  width: 620px;
+  height: 112px;
+  background-color: #f4f4f4;
+}
+
+.feedback-btn {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.feedback-form-close {
+  width: 21px;
+  height: 21px;
+  background-image: url(/svg/icon-close.svg);
+  background-color: #ffffff;
+}
+
+.feedback input,
+textarea {
+  border: solid 2px #dee3e4;
+}
