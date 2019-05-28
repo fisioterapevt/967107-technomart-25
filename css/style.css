@@ -5,21 +5,10 @@
 }
 
 html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
   box-sizing: border-box;
-
 }
 
 body {
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin: 0;
   padding: 0;
 
@@ -126,7 +115,6 @@ p {
 
 /* Стилизация верхнего логотипа, поиска, закладки, корзина, кнопки "Оформить заказ" */
 .top-block {
-  width: 1200px;
   height: 42px;
   background-color: #293449;
 
@@ -137,7 +125,6 @@ p {
 
 .top-block-wrap {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -370,7 +357,7 @@ p {
 /* Основная навигация */
 .main-navigation {
   width: 940px;
-  height: 60px;
+  /* height: 60px; */
 
   margin-left: auto;
   margin-right: auto;
@@ -378,9 +365,9 @@ p {
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
 }
 
 .main-menu a {
@@ -406,27 +393,15 @@ p {
 }
 
 /* Основная часть сайта */
-.container,
-.container-catalog {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Секция Наши предложения */
-.offers-top {
+.width-940 {
   width: 940px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
+/* Секция Наши предложения */
 
 .top {
-  width: 940px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .our-offers li {
@@ -436,10 +411,7 @@ p {
 }
 
 .offers-down {
-  width: 940px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .offers-down li {
@@ -471,32 +443,24 @@ li.discount {
 
 /* Популярные товары */
 
-.catalog-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-
-  margin-bottom: 20px;
-}
-
 .popular-item {
   width: 220px;
   height: 318px;
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
+
+  margin-bottom: 20px;
+
 }
 
 .popular-goods-title,
 .popular-manufacturers-title {
-  width: 940px;
   height: 89px;
   background-color: #f9f5f0;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 0 30px;
   margin-bottom: 20px;
 
@@ -525,9 +489,36 @@ li.discount {
   height: 145px;
   border: solid 1px #eaeaea;
   background-color: #ffffff;
-
   margin-bottom: 20px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
+.bosh {
+  background-image: url(/png/bosch.png);
+}
+.makita {
+  background-image: url(/png/Makita.png);
+}
+.dewalt {
+background-image: url(/png/DeWALT.png);
+}
+.interskol {
+background-image: url(/png/Интерскол.png);
+}
+.hitachi {
+background-image: url(/png/Hitachi.png);
+}
+.lg {
+background-image: url(/png/LG.png);
+}
+.aeg {
+background-image: url(/png/AEG.png);
+}
+.metabo {
+background-image: url(/png/Metabo.png);
+}
+
 
 .manufacturers-list li:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
@@ -540,6 +531,9 @@ li.discount {
 
 /* Секция Сервисы */
 .servises {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f4f8f9;
 
   margin-bottom: 80px;
@@ -588,40 +582,33 @@ li.discount {
 /* Секция "О компании" */
 .contacts-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
 
   margin-bottom: 86px;
-
 }
 
 .transport {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
-}
 
+  margin-bottom: 37px;
+}
+.transport li {
+  margin-bottom: 30px;
+}
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
   margin-right: 120px;
-  margin-left: 130px;
-}
-
-.contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  margin-right: 130px;
 }
 
 .contacts a {
   width: 300px;
 }
-
+.contacts p,
+.contacts h2,
+.about h2,
+.about p  {
+  margin-bottom: 38px;
+}
 .about a {
   width: 220px;
 }
@@ -692,7 +679,6 @@ li.discount {
   background-color: #f2f6f8;
 
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -710,9 +696,7 @@ fieldset {
 
 /* Фильтр выбора призводителя и питания */
 .main-columns {
-  width: 940px;
   display: flex;
-  align-items: flex-start;
 }
 
 .filter {
@@ -763,10 +747,6 @@ fieldset {
   border-top: 1px groove;
 }
 
-.range-options {
-  width: 220px;
-}
-
 .range-options label {
   font-size: 15px;
   line-height: 20px;
@@ -784,18 +764,14 @@ fieldset {
 /* Блок сортировки */
 .sorting-block {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 
-  width: 700px;
   height: 38px;
   background-color: #f7f3ec;
   border-radius: 3px;
 
   margin-left: 20px;
   margin-bottom: 20px;
-
-  font-size: 18px;
 }
 
 .sorting-block ul {
@@ -841,8 +817,6 @@ fieldset {
 /* Карточка товара */
 
 .catalog {
-  display: flex;
-  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -907,10 +881,9 @@ fieldset {
 }
 
 .footer-light {
-  width: 1200px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   background-color: #32425c;
 }
 
@@ -1104,6 +1077,8 @@ fieldset {
 .continue-shopping,
 .checkout-link {
   width: 220px;
+  display: flex;
+  justify-content: center;
 }
 
 .continue-shopping {
