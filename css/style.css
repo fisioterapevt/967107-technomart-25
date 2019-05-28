@@ -397,6 +397,7 @@ p {
   width: 940px;
   margin: 0 auto;
 }
+
 /* Секция Наши предложения */
 
 .top {
@@ -448,9 +449,12 @@ li.discount {
   height: 318px;
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
+}
 
-  margin-bottom: 20px;
-
+.catalog-popular {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
 }
 
 .popular-goods-title,
@@ -494,29 +498,37 @@ li.discount {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
 .bosh {
   background-image: url(/png/bosch.png);
 }
+
 .makita {
   background-image: url(/png/Makita.png);
 }
+
 .dewalt {
-background-image: url(/png/DeWALT.png);
+  background-image: url(/png/DeWALT.png);
 }
+
 .interskol {
-background-image: url(/png/Интерскол.png);
+  background-image: url(/png/Интерскол.png);
 }
+
 .hitachi {
-background-image: url(/png/Hitachi.png);
+  background-image: url(/png/Hitachi.png);
 }
+
 .lg {
-background-image: url(/png/LG.png);
+  background-image: url(/png/LG.png);
 }
+
 .aeg {
-background-image: url(/png/AEG.png);
+  background-image: url(/png/AEG.png);
 }
+
 .metabo {
-background-image: url(/png/Metabo.png);
+  background-image: url(/png/Metabo.png);
 }
 
 
@@ -593,9 +605,11 @@ background-image: url(/png/Metabo.png);
 
   margin-bottom: 37px;
 }
+
 .transport li {
   margin-bottom: 30px;
 }
+
 .about {
   margin-right: 120px;
 }
@@ -603,12 +617,14 @@ background-image: url(/png/Metabo.png);
 .contacts a {
   width: 300px;
 }
+
 .contacts p,
 .contacts h2,
 .about h2,
-.about p  {
+.about p {
   margin-bottom: 38px;
 }
+
 .about a {
   width: 220px;
 }
