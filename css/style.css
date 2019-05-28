@@ -115,7 +115,7 @@ p {
 
 /* Стилизация верхнего логотипа, поиска, закладки, корзина, кнопки "Оформить заказ" */
 .top-block {
-  height: 42px;
+  min-height: 42px;
   background-color: #293449;
 
   display: flex;
@@ -132,12 +132,12 @@ p {
 
 .header-logo {
   width: 220px;
-  height: 47px;
+  min-height: 47px;
 
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 
-  background-image: url(/svg/logo-technomart.svg);
+  background-image: url(../svg/logo-technomart.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -154,13 +154,13 @@ p {
 
 .search input {
   width: 270px;
-  height: 42px;
+  min-height: 42px;
   background-color: #293449;
 }
 
 .search input::placeholder {
   content: ' ';
-  background-image: url(/svg/icon-search.svg);
+  background-image: url(../svg/icon-search.svg);
   background-repeat: no-repeat;
   background-position: 7% 50%;
 
@@ -190,7 +190,7 @@ p {
 .basket,
 .btn-checkout {
   width: 150px;
-  height: 42px;
+  min-height: 42px;
 
   display: flex;
   justify-content: center;
@@ -200,9 +200,9 @@ p {
 /* Закладки */
 .bookmarks::before {
   content: ' ';
-  background-image: url(/svg/icon-bookmark.svg);
+  background-image: url(../svg/icon-bookmark.svg);
   width: 14px;
-  height: 16px;
+  min-height: 16px;
   background-repeat: no-repeat;
   opacity: 0.3;
   padding-right: 30px;
@@ -224,9 +224,9 @@ p {
 
 .basket::before {
   content: ' ';
-  background-image: url(/svg/icon-cart.svg);
+  background-image: url(../svg/icon-cart.svg);
   width: 15px;
-  height: 15px;
+  min-height: 15px;
   background-repeat: no-repeat;
   opacity: 0.3;
   padding-right: 30px;
@@ -340,7 +340,7 @@ p {
 }
 
 .login-link::before {
-  content: url(/svg/icon-login.svg);
+  content: url(../svg/icon-login.svg);
   padding-right: 14px;
 }
 
@@ -357,7 +357,7 @@ p {
 /* Основная навигация */
 .main-navigation {
   width: 940px;
-  /* height: 60px; */
+
 
   margin-left: auto;
   margin-right: auto;
@@ -381,7 +381,7 @@ p {
   align-items: center;
 
   padding: 0 31px;
-  height: 60px;
+  min-height: 60px;
 }
 
 .main-menu li:hover {
@@ -407,7 +407,7 @@ p {
 
 .our-offers li {
   width: 300px;
-  height: 123px;
+  min-height: 123px;
   margin-bottom: 20px;
 }
 
@@ -421,8 +421,8 @@ p {
 
 .slider {
   width: 620px;
-  height: 266px;
-  background-image: url(/img/slider.jpg);
+  min-height: 266px;
+  background-image: url(../img/slider.jpg);
 }
 
 li.materials,
@@ -446,7 +446,7 @@ li.discount {
 
 .popular-item {
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
 }
@@ -459,7 +459,7 @@ margin-bottom: 20px;
 
 .popular-goods-title,
 .popular-manufacturers-title {
-  height: 89px;
+  min-height: 89px;
   background-color: #f9f5f0;
 
   display: flex;
@@ -490,7 +490,7 @@ margin-bottom: 20px;
 
 .manufacturers-list li {
   width: 220px;
-  height: 145px;
+  min-height: 145px;
   border: solid 1px #eaeaea;
   background-color: #ffffff;
   margin-bottom: 20px;
@@ -500,35 +500,35 @@ margin-bottom: 20px;
 }
 
 .bosh {
-  background-image: url(/png/bosch.png);
+  background-image: url(../png/bosch.png);
 }
 
 .makita {
-  background-image: url(/png/Makita.png);
+  background-image: url(../png/Makita.png);
 }
 
 .dewalt {
-  background-image: url(/png/DeWALT.png);
+  background-image: url(../png/DeWALT.png);
 }
 
 .interskol {
-  background-image: url(/png/Интерскол.png);
+  background-image: url(../png/Интерскол.png);
 }
 
 .hitachi {
-  background-image: url(/png/Hitachi.png);
+  background-image: url(../png/Hitachi.png);
 }
 
 .lg {
-  background-image: url(/png/LG.png);
+  background-image: url(../png/LG.png);
 }
 
 .aeg {
-  background-image: url(/png/AEG.png);
+  background-image: url(../png/AEG.png);
 }
 
 .metabo {
-  background-image: url(/png/Metabo.png);
+  background-image: url(../png/Metabo.png);
 }
 
 
@@ -578,7 +578,7 @@ margin-bottom: 20px;
 
 .servises-list li {
   width: 240px;
-  height: 61px;
+  min-height: 61px;
   box-shadow: 0px 1px 0 0 #293449,
     inset 0px 1px 0 0 #405069;
   background-color: #32425c;
@@ -659,7 +659,7 @@ margin-bottom: 20px;
   content: ' ';
   width: 14px;
   height: 12px;
-  background-image: url(/svg/icon-home.svg);
+  background-image: url(../svg/icon-home.svg);
   background-repeat: no-repeat;
 }
 
@@ -667,7 +667,7 @@ margin-bottom: 20px;
   content: ' ';
   width: 14px;
   height: 12px;
-  background-image: url(/svg/icon-right-small.svg);
+  background-image: url(../svg/icon-right-small.svg);
   background-repeat: no-repeat;
   margin-left: 10px;
   margin-right: 10px;
@@ -687,7 +687,7 @@ margin-bottom: 20px;
   text-transform: uppercase;
 
   width: 940px;
-  height: 89px;
+  min-height: 89px;
 
   padding-left: 30px;
 
@@ -717,7 +717,7 @@ fieldset {
 
 .filter {
   width: 220px;
-  height: 38px;
+  min-height: 38px;
   background-color: #f7f3ec;
   border-radius: 3px;
 
@@ -735,7 +735,7 @@ fieldset {
 
 .slider-price {
   width: 220px;
-  height: 80px;
+  min-height: 80px;
   background-color: #f7f3ec;
   border-radius: 3px;
 
@@ -753,7 +753,7 @@ fieldset {
 
 .input-price input {
   width: 95px;
-  height: 38px;
+  min-height: 38px;
   background-color: #f7f3ec;
   border-radius: 3px;
 }
@@ -771,7 +771,7 @@ fieldset {
 
 .range-options input[type=submit] {
   width: 140px;
-  height: 38px;
+  min-height: 38px;
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
   text-transform: uppercase;
@@ -782,7 +782,7 @@ fieldset {
   display: flex;
   align-items: center;
 
-  height: 38px;
+  min-height: 38px;
   background-color: #f7f3ec;
   border-radius: 3px;
 
@@ -801,7 +801,7 @@ fieldset {
 .sorting-up {
   width: 11px;
   height: 10px;
-  background-image: url(/svg/icon-up-dir.svg);
+  background-image: url(../svg/icon-up-dir.svg);
   background-repeat: no-repeat;
 
   margin-right: 21px;
@@ -810,7 +810,7 @@ fieldset {
 .sorting-down {
   width: 11px;
   height: 10px;
-  background-image: url(/svg/icon-down-dir.svg);
+  background-image: url(../svg/icon-down-dir.svg);
   background-repeat: no-repeat;
 
   margin-right: 17px;
@@ -845,7 +845,7 @@ fieldset {
 
 .catalog-item {
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
   margin-left: 20px;
@@ -913,7 +913,7 @@ fieldset {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 
-  background-image: url(/svg/logo-technomart.svg);
+  background-image: url(../svg/logo-technomart.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
@@ -988,7 +988,7 @@ fieldset {
 
 .footer-social li {
   width: 42px;
-  height: 42px;
+  min-height: 42px;
   border-radius: 50%;
   background-color: #212a3a;
 
@@ -1000,19 +1000,19 @@ fieldset {
 }
 
 .social-btn-vk {
-  background-image: url(/svg/icon-vk.svg);
+  background-image: url(../svg/icon-vk.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social-btn-fb {
-  background-image: url(/svg/icon-fb.svg);
+  background-image: url(../svg/icon-fb.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social-btn-insta {
-  background-image: url(/svg/icon-insta.svg);
+  background-image: url(../svg/icon-insta.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -1049,7 +1049,7 @@ fieldset {
 .order-status {
   display: none;
   width: 620px;
-  height: 282px;
+  min-height: 282px;
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
   border-top: 7px solid #ee3643;
   background-color: #ffffff;
@@ -1061,7 +1061,7 @@ fieldset {
   justify-content: flex-start;
   align-items: center;
 
-  background-image: url(/svg/icon-mark.svg);
+  background-image: url(../svg/icon-mark.svg);
   background-repeat: no-repeat;
   background-position: 80px 50px;
 }
@@ -1111,7 +1111,7 @@ fieldset {
 .order-close {
   width: 21px;
   height: 21px;
-  background-image: url(/svg/icon-close.svg);
+  background-image: url(../svg/icon-close.svg);
   background-color: #ffffff;
 
   margin-left: 100px;
@@ -1122,13 +1122,13 @@ fieldset {
 .feedback {
   display: none;
   width: 620px;
-  height: 430px;
+  min-height: 430px;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .feedback-style {
   width: 620px;
-  height: 112px;
+  min-height: 112px;
   background-color: #f4f4f4;
 }
 
@@ -1139,7 +1139,7 @@ fieldset {
 .feedback-form-close {
   width: 21px;
   height: 21px;
-  background-image: url(/svg/icon-close.svg);
+  background-image: url(../svg/icon-close.svg);
   background-color: #ffffff;
 }
 
