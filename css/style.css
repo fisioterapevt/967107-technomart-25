@@ -76,6 +76,7 @@ p {
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -117,18 +118,13 @@ p {
 .top-block {
   min-height: 42px;
   background-color: #293449;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .top-block-wrap {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-
-
 
 .header-logo {
   width: 220px;
@@ -262,7 +258,7 @@ p {
 /* Описание в хедере h1 телефон, адрес, блок "Войти Регистрация" */
 .header-middle {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   margin-bottom: 40px;
@@ -356,18 +352,13 @@ p {
 
 /* Основная навигация */
 .main-navigation {
-  width: 940px;
-
-
-  margin-left: auto;
-  margin-right: auto;
-
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
+}
 
-  /* display: flex;
+.main-menu {
+  display: flex;
   justify-content: space-between;
-  align-items: center; */
 }
 
 .main-menu a {
@@ -393,7 +384,7 @@ p {
 }
 
 /* Основная часть сайта */
-.width-940 {
+.container {
   width: 940px;
   margin: 0 auto;
 }
@@ -423,6 +414,7 @@ p {
   width: 620px;
   min-height: 266px;
   background-image: url(../img/slider.jpg);
+  background-repeat: no-repeat;
 }
 
 li.materials,
@@ -452,9 +444,9 @@ li.discount {
 }
 
 .catalog-popular {
-display: flex;
-justify-content: space-between;
-margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .popular-goods-title,
@@ -554,16 +546,13 @@ margin-bottom: 20px;
 
 .about-servises {
   width: 398px;
-  margin-left: 130px;
   margin-bottom: 61px;
 }
 
 .our-servises {
-  width: 1200px;
-
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .servises-list {
@@ -886,23 +875,19 @@ fieldset {
 /* Секция "О перфораторах" */
 .about-perforators {
   background-color: #f2f6f8;
-  padding: 67px 130px;
+  min-height: 261px;
 }
 
 /* Футер ----------------------------------------*/
-.main-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .footer-light {
-  display: flex;
-  justify-content: center;
-  /* align-items: flex-start; */
   background-color: #32425c;
 }
-
+.light,
+.dark {
+   display: flex;
+   justify-content: space-between;
+}
 .footer-left {
   margin-right: 68px;
 }
@@ -938,12 +923,11 @@ fieldset {
 
 }
 
-.footer-menu {
-  margin-left: 68px;
-}
+
 
 .footer-menu li {
-  margin-right: 60px;
+  margin-left: 60px;
+
 }
 
 .footer-menu li:hover {
@@ -955,12 +939,13 @@ fieldset {
 }
 
 .footer-menu-above {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   margin-bottom: 30px;
 }
 
 .footer-menu-below {
   margin-left: 25px;
+  margin-bottom: 72px;
 }
 
 .footer-menu-below a {
@@ -968,16 +953,11 @@ fieldset {
 }
 
 .footer-dark {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  min-height: 107px;
   background-color: #293449;
 }
 
 .copyright {
-  margin-top: 39px;
-  margin-bottom: 35px;
   margin-right: 160px;
 }
 

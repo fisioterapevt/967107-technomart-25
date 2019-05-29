@@ -4,82 +4,87 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic"
-    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
   <header class='main-header main-header-catalog'>
-    <!-- Секция верхней части header -->
-    <div class="top-block">
-      <div class="top-block-wrap">
-        <!-- Логотип -->
-        <div class="header-logo">
-          <a href="#" class="logo"></a>
+          <!-- Секция верхней части header -->
+          <div class="top-block">
+            <div class="container">
+              <div class="top-block-wrap">
+                <!-- Логотип -->
+                <div class="header-logo">
+                  <a href="#" class="logo"></a>
+                </div>
+                <!-- Форма поиска -->
+                <div class="search">
+                  <form action="#">
+                    <input type="search" name='search' placeholder="Поиск:">
+                    <button class="visually-hidden" type="submit">Отправить</button>
+                  </form>
+                </div>
+                <!-- Закладки -->
+                <div class="bookmarks">
+                  <a class="bookmarks-link" href='#'>Закладки:</a>
+                </div>
+                <!-- Корзина -->
+                <div class="basket">
+                  <a class="basket-link" href='#'>Корзина:</a>
+                </div>
+                <!--  Кнопка оформить заказ -->
+                <div class="btn-checkout">
+                  <a class="checkout-link" href='#'>Оформить заказ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Секция средней части header -->
+          <div class="container">
+          <div class="header-middle">
+            <!-- Заголовок h1 -->
+            <h1 class="description">
+              Интернет-магазин строительных материалов и
+              инструментов для ремонта
+            </h1>
+            <!-- Адрес и телефон -->
+            <div class="header-address">
+              <span class="header-tel">
+                <a class="header-tel-link" href="tel:+78125550505">+7 (812) 555-05-55</a>
+              </span>
+               <address class="address-top">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              </address>
+            </div>
+            <!-- Вход и регистрация -->
+            <ul class="ul-style user-in">
+              <li class="li-style login-link"><a href="#">Войти</a></li>
+              <li class="li-style check-in-link"><a href="#">Регистрация</a></li>
+            </ul>
+            </div>
+          </div>
+          <!-- Основное меню -->
+          <div class="container">
+          <nav class="main-navigation">
+            <ul class="ul-style main-menu">
+              <li class="li-style"><a href="#">Главная</a></li>
+              <li class="li-style"><a href="#">Компания</a></li>
+              <li class="li-style"><a href="#">Каталог</a></li>
+              <li class="li-style"><a href="#">Новости</a></li>
+              <li class="li-style"><a href="#">Спецпредложения</a></li>
+              <li class="li-style"><a href="#">Доставка</a></li>
+              <li class="li-style"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
         </div>
-        <!-- Форма поиска -->
-        <div class="search">
-          <form action="#">
-            <input type="search" name='search' placeholder="Поиск:">
-            <button class="visually-hidden" type="submit">Отправить</button>
-          </form>
-        </div>
-
-        <!-- Закладки -->
-        <div class="bookmarks">
-          <a class="bookmarks-link" href='#'>Закладки:</a>
-        </div>
-        <!-- Корзина -->
-        <div class="basket">
-          <a class="basket-link" href='#'>Корзина:</a>
-        </div>
-        <!--  Кнопка оформить заказ -->
-        <div class="btn-checkout">
-          <a class="checkout-link" href='#'>Оформить заказ</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Секция средней части header -->
-    <div class="header-middle">
-      <!-- Заголовок h1 -->
-      <h1 class="description">
-        Интернет-магазин строительных материалов и
-        инструментов для ремонта
-      </h1>
-      <!-- Адрес и телефон -->
-      <div class="header-address">
-        <span class="header-tel">
-          <a class="header-tel-link" href="tel:+78125550505">+7 (812) 555-05-55</a>
-        </span>
-         <address class="address-top">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </address>
-      </div>
-      <!-- Вход и регистрация -->
-      <ul class="ul-style user-in">
-        <li class="li-style login-link"><a href="#">Войти</a></li>
-        <li class="li-style check-in-link"><a href="#">Регистрация</a></li>
-      </ul>
-    </div>
-    <!-- Основное меню -->
-    <nav class="main-navigation">
-      <ul class="ul-style main-menu">
-        <li class="li-style"><a href="#">Главная</a></li>
-        <li class="li-style"><a href="#">Компания</a></li>
-        <li class="li-style"><a href="#">Каталог</a></li>
-        <li class="li-style"><a href="#">Новости</a></li>
-        <li class="li-style"><a href="#">Спецпредложения</a></li>
-        <li class="li-style"><a href="#">Доставка</a></li>
-        <li class="li-style"><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
+        </header>
   
-  <main class="container-catalog">
-      <div class="width-940">
+  <main class="main-catalog">
+      <div class="container">
     <!-- Хлебные крошки -->
     <div class="breadcrumbs-style">
       <ul class="ul-style breadcrumbs">
@@ -266,6 +271,7 @@
     </div>
     </div>
     <section class="about-perforators">
+        <div class="container">
       <h2>Пара слов о перфораторах</h2>
       <p>Перфоратор — универсальный строительный инструмент.
         Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
@@ -274,79 +280,83 @@
         В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
         совмещены отбойный молоток и ударная дрель.
       </p>
+      </div>
     </section> 
   </main>
 
-  <!-- Футер -->
   <footer class="main-footer">
-    <!-- Светлая часть футера -->
-    <div class="footer-light">
-
-      <div class="footer-logo-address">
-        <!-- Логотип футера -->
-        <div class="footer-logo">
-          <a href="#" class="logo"></a>
+      <!-- Светлая часть футера -->
+      <div class="footer-light">
+          <div class="container light">
+  
+        <div class="footer-logo-address">
+          <!-- Логотип футера -->
+          <div class="footer-logo">
+            <a href="#" class="logo"></a>
+          </div>
+          <!-- Адрес и телефон в футере -->
+          <address class="address-down">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+78125550505">+7 (812) 555-05-55</a>
+          </address>
         </div>
-        <!-- Адрес и телефон в футере -->
-        <address class="address-down">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+78125550505">+7 (812) 555-05-55</a>
-        </address>
+  
+        <div class="footer-menu">
+          <!-- Меню футера верхнее -->
+          <ul class="ul-style footer-menu-above">
+            <li class="li-style"><a href="#">Компания</a></li>
+            <li class="li-style"><a href="#">Новости</a></li>
+            <li class="li-style"><a href="#">Каталог</a></li>
+            <li class="li-style"><a href="#">Доставка</a></li>
+            <li class="li-style"><a href="#">Контакты</a></li>
+          </ul>
+          <!-- Меню футера нижнее -->
+          <ul class="ul-style footer-menu-below">
+            <li class="li-style"><a href="#">Материалы</a></li>
+            <li class="li-style"><a href="#">Техника</a></li>
+            <li class="li-style"><a href="#">Инструмент</a></li>
+            <li class="li-style"><a href="#">Спецпредложения</a></li>
+          </ul>
+        </div>
+        </div>
       </div>
-
-      <div class="footer-menu">
-        <!-- Меню футера верхнее -->
-        <ul class="ul-style footer-menu-above">
-          <li class="li-style"><a href="#">Компания</a></li>
-          <li class="li-style"><a href="#">Новости</a></li>
-          <li class="li-style"><a href="#">Каталог</a></li>
-          <li class="li-style"><a href="#">Доставка</a></li>
-          <li class="li-style"><a href="#">Контакты</a></li>
-        </ul>
-        <!-- Меню футера нижнее -->
-        <ul class="ul-style footer-menu-below">
-          <li class="li-style"><a href="#">Материалы</a></li>
-          <li class="li-style"><a href="#">Техника</a></li>
-          <li class="li-style"><a href="#">Инструмент</a></li>
-          <li class="li-style"><a href="#">Спецпредложения</a></li>
-        </ul>
+  
+      <!-- Темная часть футера -->
+      <div class="footer-dark">
+        <div class="container dark">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <!-- Копирайт -->
+        <div class="copyright">
+          <p> &copy; 2010–2019 Компания «Техномарт»<br>
+            Все права защищены
+          </p>
+        </div>
+        <!-- Социальные сети -->
+        <div class="footer-social">
+          <ul class="ul-style">
+            <li class="li-style social-btn-vk">
+              <a href="#" class="social-vk"></a>
+            </li>
+            <li class=" li-style social-btn-fb">
+              <a href="#" class="social-btn-fb"></a>
+            </li>
+            <li class="li-style social-btn-insta">
+              <a href="#" class="social-btn-inst"></a>
+            </li>
+          </ul>
+        </div>
+        <!-- Обратная связь -->
+        <div class="feedback-email">
+          <p>Обратная связь:</p>
+          <a class="footer-email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="footer-developed">
+          <p>Разработано — </p>
+          <a class="footer-htmlacademy" href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </div>
+        </div>
       </div>
-    </div>
-
-    <!-- Темная часть футера -->
-    <div class="footer-dark">
-      <h2 class="visually-hidden">Контактная информация</h2>
-      <!-- Копирайт -->
-      <div class="copyright">
-        <p> &copy; 2010–2019 Компания «Техномарт»<br>
-          Все права защищены
-        </p>
-      </div>
-      <!-- Социальные сети -->
-      <div class="footer-social">
-        <ul class="ul-style">
-          <li class="li-style social-btn-vk">
-            <a href="#" class="social-vk"></a>
-          </li>
-          <li class=" li-style social-btn-fb">
-            <a href="#" class="social-btn-fb"></a>
-          </li>
-          <li class="li-style social-btn-insta">
-            <a href="#" class="social-btn-inst"></a>
-          </li>
-        </ul>
-      </div>
-      <!-- Обратная связь -->
-      <div class="feedback-email">
-        <p>Обратная связь:</p>
-        <a class="footer-email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </div>
-      <div class="footer-developed">
-        <p>Разработано — </p>
-        <a class="footer-htmlacademy" href="https://htmlacademy.ru">htmlacademy.ru</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
