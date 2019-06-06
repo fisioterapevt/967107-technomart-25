@@ -25,7 +25,10 @@
           <!-- Форма поиска -->
           <div class="search">
             <form action="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                <path fill="#ffffff"
+                  d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+              </svg>
               <input type="search" name='search' placeholder="Поиск:">
               <button class="visually-hidden" type="submit">Отправить</button>
             </form>
@@ -105,6 +108,7 @@
         <h2 class="visually-hidden">Наши предложения</h2>
         <ul class="ul-style our-offers top">
           <li class="li-style materials">
+              <div class="new">новинка</div>
             <p>Материалы</p>
             <a class="button" href="#">на любой вкус</a>
             <span class="icon-1"></span>
@@ -119,25 +123,26 @@
             <a class="button" href="#">для стройки</a>
             <span class="icon-3"></span>
         </ul>
-      
-      <!-- Нижние три блока -->
-      <div class="offers-down">
-        <div class="slider">
-          <a class="button-red" href='#'>Открыть Каталог</a>
+
+        <!-- Слайдер -->
+        <div class="offers-down">
+          <div class="slider">
+
+            <a class="button-red" href='#'>Открыть Каталог</a>
+          </div>
+          <ul class="ul-style our-offers">
+            <li class="discounts">
+              <p>Скидки 50%</p>
+              <a class="button" href="#">на 350 товаров</a>
+              <span class="icon-4"></span>
+            </li>
+            <li class="delivery">
+              <p>Доставка</p>
+              <a class="button" href="#">бесплатно</a>
+              <span class="icon-5"></span>
+            </li>
+          </ul>
         </div>
-        <ul class="ul-style our-offers">
-          <li class="discounts">
-            <p>Скидки 50%</p>
-            <a class="button" href="#">на 350 товаров</a>
-            <span class="icon-4"></span>
-          </li>
-          <li class="delivery">
-            <p>Доставка</p>
-            <a class="button" href="#">бесплатно</a>
-            <span class="icon-5"></span>
-          </li>
-        </ul>
-      </div>
       </div>
       <!-- Популярные товары -->
       <section class="popular">
@@ -146,104 +151,38 @@
           <a class="button-red" href='#'>Все популярные товары</a>
         </div>
         <div class="popular-goods">
-          <ul class="ul-style catalog-popular">
+          <ul class="ul-style popular-list">
             <li class="li-style popular-item">
-              <!-- <img src="img/Perforator_4.jpg" width="217" height="170" alt="Перфоратор BOSH BFG 9000"> -->
-              <!-- <div class="catalog-item-price">
-              <span class="standart-price">32500 ₽</span>
-              <span class="new-price">25500 Р.</span>
-            </div> -->
+              <img src="/img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 9000">
+              <div class="catalog-title">Перфоратор BOSCH</div>
+              <div class="catalog-model">BFG 9000</div>
+              <div class="discount">32500 P.</div>
+              <div class="catalog-price">25500 Р.</div>
             </li>
             <li class="li-style popular-item">
+              <img src="/img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
+              <div class="catalog-title">Перфоратор BOSCH</div>
+              <div class="catalog-model">BFG 3000</div>
+              <div class="discount">22500 Р.</div>
+              <div class="catalog-price">15500 Р.</div>
             </li>
             <li class="li-style popular-item">
+              <img src="/img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
+              <div class="catalog-title">Перфоратор BOSCH</div>
+              <div class="catalog-model">BFG 6000</div>
+              <div class="discount">30500 Р.</div>
+              <div class="catalog-price">25500 Р.</div>
             </li>
             <li class="li-style popular-item">
+              <div class="new">новинка</div>
+              <img src="/img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 2000">
+              <div class="catalog-title">Перфоратор BOSCH</div>
+              <div class="catalog-model">BFG 2000</div>
+              <div class="discount"></div>
+              <div class="catalog-price">12500 Р.</div>
             </li>
-            <!-- <li class="li-style catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-item-title">Перфоратор BOSH BFG 9000</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="#">
-                <img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 9000">
-              </a>
-            </p>
-            <p class="catalog-item-price">
-              <span class="standart-price">32500 ₽</span>
-              <span class="new-price">25500 Р.</span>
-            </p>
-            <div>
-              <a class="btn-buy" href="#">Купить</a>
-              <a class="btn-bookmarks" href="#">В закладки</a>
-            </div>
-          </li>
-         <li class="li-style catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-item-title">Перфоратор BOSH BFG 3000</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="#">
-                <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
-              </a>
-            </p>
-            <p class="catalog-item-price">
-              <span class="standart-price">22500 ₽</span>
-              <span class="new-price">15500 Р.</span>
-            </p>
-            <div>
-              <a class="btn-buy" href="#">Купить</a>
-              <a class="btn-bookmarks" href="#">В закладки</a>
-            </div>
-          </li>
-          <li class="li-style catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-item-title">Перфоратор BOSH BFG 6000</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="#">
-                <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
-              </a>
-              <span class="new-item">New</span>
-            </p>
-            <p class="catalog-item-price">
-              <span class="standart-price">30500 ₽</span>
-              <span class="new-price">25500 Р.</span>
-            </p>
-            <div>
-              <a class="btn-buy" href="#">Купить</a>
-              <a class="btn-bookmarks" href="#">В закладки</a>
-            </div>
-          </li>
-          <li class="li-style catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-item-title">Перфоратор BOSH BFG 2000</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="#">
-                <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 2000">
-              </a>
-            </p>
-            <p class="catalog-item-price">
-              <span class="standart-price">12500 ₽</span>
-              <span class="new-price">12500 Р.</span>
-            </p>
-            <div>
-              <a class="btn-buy" href="#">Купить</a>
-              <a class="btn-bookmarks" href="#">В закладки</a>
-            </div>
-          </li> -->
           </ul>
         </div>
-
         <!-- Популярные производители -->
         <div class="popular-manufacturers-title">
           <h2>Популярные производители:</h2>
@@ -251,7 +190,7 @@
         </div>
         <div class="popular-manufacturers">
           <ul class=" ul-style manufacturers-list">
-            <li class="li-style bosh"></li>
+            <li class="li-style bosсh"></li>
             <li class="li-style makita"></li>
             <li class="li-style dewalt"></li>
             <li class="li-style interskol"></li>
@@ -275,9 +214,9 @@
         </div>
         <div class="our-servises">
           <ul class="ul-style servises-list">
-            <li class="">Доставка</li>
-            <li class="">Гарантия</li>
-            <li class="">Кредит</li>
+            <li class="" tabindex="0">Доставка</li>
+            <li class="" tabindex="0">Гарантия</li>
+            <li class="" tabindex="0">Кредит</li>
           </ul>
           <div class="delivery">
             <h2>Доставка</h2>
@@ -287,7 +226,7 @@
               поднимая его на ваш этаж!</p>
           </div>
           <div class="track">
-            <img src="png/truck.png" alt="Изображение грузовика">
+            <img src="img/truck.png" alt="Изображение грузовика">
           </div>
         </div>
       </div>
@@ -295,29 +234,34 @@
     <!-- О компании -->
     <div class="container">
       <div class="contacts-wrapper">
-        <!--------------------------------------Всплывающее окно "Форма обратной связи"------------------------>
-        <section class="feedback">
+        <!--Всплывающее окно "Форма обратной связи"-->
+        <section class="modal-feedback">
           <h2 class="visually-hidden">Форма обратной связи</h2>
-          <button class="feedback-form-close" type="button"></button>
           <form action="#" class="feedback-form" method="post">
-            <label>
-              Ваше имя:
-              <input class="feedback-field" type="text" name="name" placeholder="Имя Фамилия">
-            </label>
-            <label>
-              Ваш e-mail:
-              <input class="feedback-field" type="text" name="email" placeholder="email@example.com">
-            </label>
-            <label>
-              Текст письма:
-              <textarea class="feedback-textarea" name="text" cols="30" rows="10"
-                placeholder="В свободной форме"></textarea>
-            </label>
-            <div class="feedback-style">
-              <button class="feedback-btn button-red" type="submit">Отправить</button>
+            <div class="form-block">
+              <label for="name">Ваше имя:</label>
+              <input type="text" name="name" id="name" placeholder="Имя Фамилия">
             </div>
+            <div class="form-block">
+              <label for="email">Ваш e-mail:</label>
+              <input type="text" name="email" id="email" placeholder="email@example.com">
+            </div>
+            <label for="text">Текст письма:</label>
+            <textarea class="feedback-textarea" name="text" id="text" cols="30" rows="6"
+              placeholder="В свободной форме"></textarea>
+            <div class="feedback-style">
+              <button class="feedback-send button-red" type="submit">Отправить</button>
+            </div>
+            <button class="modal-close" type="button">Закрыть</button>
           </form>
         </section>
+        <!-- Всплывающее окно "Карта" -->
+        <section class="modal-map">
+          <h2 class="visually-hidden">Как доехать до офиса</h2>
+          <img src="img/map.jpg" width="940" height="446" alt="карта проезда до офиса">
+          <button class="modal-close" type="button">Закрыть</button>
+        </section>
+
         <section class="about-company">
           <h2>Компания «Техномарт»</h2>
           <p>
@@ -330,9 +274,9 @@
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="ul-style transport ">
-            <li><span></span>Деловые линии</li>
-            <li><span></span>Автотрейдинг</li>
-            <li><span></span>ЖелДорЭкспедиция</li>
+            <li><span class="dash"></span>Деловые линии</li>
+            <li><span class="dash"></span>Автотрейдинг</li>
+            <li><span class="dash"></span>ЖелДорЭкспедиция</li>
           </ul>
           <a class="button-red" href='#'>Подробнее о компании</a>
         </section>
@@ -352,7 +296,7 @@
     </div>
   </main>
 
-  <!-------------------------------------------------------------------------------------------------------->
+
   <!-- Футер -->
   <footer class="main-footer">
     <!-- Светлая часть футера -->
