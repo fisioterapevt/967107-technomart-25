@@ -6,9 +6,8 @@
   <title>HTML Academy: Техномарт</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic" rel="stylesheet"
-    type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic"
+  <link
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7cPT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
 </head>
 
@@ -35,17 +34,11 @@
           </div>
 
           <!-- Закладки -->
-          <div class="bookmarks">
-            <a class="bookmarks-link" href="#">Закладки: 0</a>
-          </div>
+          <a class="bookmarks" href="#">Закладки: 0</a>
           <!-- Корзина -->
-          <div class="basket">
-            <a class="basket-link" href="#">Корзина: 0</a>
-          </div>
+          <a class="basket" href="#">Корзина: 0</a>
           <!--  Кнопка оформить заказ -->
-          <div class="btn-checkout">
-            <a class="checkout-link" href="#">Оформить заказ</a>
-          </div>
+          <a class="btn-checkout" href="#">Оформить заказ</a>
         </div>
       </div>
     </div>
@@ -87,13 +80,13 @@
     <div class="container">
       <nav class="main-navigation">
         <ul class="ul-style main-menu">
-          <li class="li-style"><a href="#">Главная</a></li>
-          <li class="li-style"><a href="#">Компания</a></li>
-          <li class="li-style"><a href="#">Каталог</a></li>
-          <li class="li-style"><a href="#">Новости</a></li>
-          <li class="li-style"><a href="#">Спецпредложения</a></li>
-          <li class="li-style"><a href="#">Доставка</a></li>
-          <li class="li-style"><a href="#">Контакты</a></li>
+          <li class=""><a href="#">Главная</a></li>
+          <li class=""><a href="#">Компания</a></li>
+          <li class=""><a href="#">Каталог</a></li>
+          <li class=""><a href="#">Новости</a></li>
+          <li class=""><a href="#">Спецпредложения</a></li>
+          <li class=""><a href="#">Доставка</a></li>
+          <li class=""><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -106,18 +99,18 @@
       <div class="offers">
         <h2 class="visually-hidden">Наши предложения</h2>
         <ul class="ul-style our-offers top">
-          <li class="li-style materials">
-              <div class="new">новинка</div>
+          <li class=" materials">
+            <div class="new">новинка</div>
             <p>Материалы</p>
             <a class="button" href="#">на любой вкус</a>
             <span class="icon-1"></span>
           </li>
-          <li class="li-style instrument">
+          <li class=" instrument">
             <p>Инструмент</p>
             <a class="button" href="#">на все случаи</a>
             <span class="icon-2"></span>
           </li>
-          <li class="li-style machinery">
+          <li class=" machinery">
             <p>Техника</p>
             <a class="button" href="#">для стройки</a>
             <span class="icon-3"></span>
@@ -126,8 +119,25 @@
         <!-- Слайдер -->
         <div class="offers-down">
           <div class="slider">
-
+            <p class="upper">Дрели</p>
+            <p class="lower">Cocедям на радость!</p>
+            <div class="slide slide-1"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+            <button class="slider-control-left" type="button">Влево</button>
+            <button class="slider-control-right" type="button">Вправо</button>
             <a class="button-red" href="#">Открыть Каталог</a>
+            <div class="switches">
+              <label>
+                <input type="radio" name="slide" value="slide1">
+                <span class="pseudoswith"></span>
+              </label>
+              <label>
+                <input checked type="radio" name="slide" value="slide2">
+                <span class="pseudoswith"></span>
+              </label>
+            </div>
+
           </div>
           <ul class="ul-style our-offers">
             <li class="discounts">
@@ -151,29 +161,45 @@
         </div>
         <div class="popular-goods">
           <ul class="ul-style popular-list">
-            <li class="li-style popular-item">
+            <li class=" popular-item">
+              <div class="catalog-buttons">
+                <a class="buy-item" href="#">Купить</a>
+                <button class="to-bookmarks" type="button">В закладки</button>
+              </div>
               <img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 9000">
               <div class="catalog-title">Перфоратор BOSCH</div>
               <div class="catalog-model">BFG 9000</div>
               <div class="discount">32500 P.</div>
               <div class="catalog-price">25500 Р.</div>
             </li>
-            <li class="li-style popular-item">
+            <li class=" popular-item">
+              <div class="catalog-buttons">
+                <a class="buy-item" href="#">Купить</a>
+                <button class="to-bookmarks" type="button">В закладки</button>
+              </div>
               <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
               <div class="catalog-title">Перфоратор BOSCH</div>
               <div class="catalog-model">BFG 3000</div>
               <div class="discount">22500 Р.</div>
               <div class="catalog-price">15500 Р.</div>
             </li>
-            <li class="li-style popular-item">
+            <li class=" popular-item">
+              <div class="catalog-buttons">
+                <a class="buy-item" href="#">Купить</a>
+                <button class="to-bookmarks" type="button">В закладки</button>
+              </div>
               <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
               <div class="catalog-title">Перфоратор BOSCH</div>
               <div class="catalog-model">BFG 6000</div>
               <div class="discount">30500 Р.</div>
               <div class="catalog-price">25500 Р.</div>
             </li>
-            <li class="li-style popular-item">
+            <li class=" popular-item">
               <div class="new">новинка</div>
+              <div class="catalog-buttons">
+                <a class="buy-item" href="#">Купить</a>
+                <button class="to-bookmarks" type="button">В закладки</button>
+              </div>
               <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 2000">
               <div class="catalog-title">Перфоратор BOSCH</div>
               <div class="catalog-model">BFG 2000</div>
@@ -269,7 +295,8 @@
             равнодушными любителей сэкономить на гастарбайтерах.
           </p>
           <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
+            Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
+            компаниями:
           </p>
           <ul class="ul-style transport ">
             <li><span class="dash"></span>Деловые линии</li>
@@ -315,18 +342,18 @@
         <div class="footer-menu">
           <!-- Меню футера верхнее -->
           <ul class="ul-style footer-menu-above">
-            <li class="li-style"><a href="#">Компания</a></li>
-            <li class="li-style"><a href="#">Новости</a></li>
-            <li class="li-style"><a href="#">Каталог</a></li>
-            <li class="li-style"><a href="#">Доставка</a></li>
-            <li class="li-style"><a href="#">Контакты</a></li>
+            <li class=""><a href="#">Компания</a></li>
+            <li class=""><a href="#">Новости</a></li>
+            <li class=""><a href="#">Каталог</a></li>
+            <li class=""><a href="#">Доставка</a></li>
+            <li class=""><a href="#">Контакты</a></li>
           </ul>
           <!-- Меню футера нижнее -->
           <ul class="ul-style footer-menu-below">
-            <li class="li-style"><a href="#">Материалы</a></li>
-            <li class="li-style"><a href="#">Техника</a></li>
-            <li class="li-style"><a href="#">Инструмент</a></li>
-            <li class="li-style"><a href="#">Спецпредложения</a></li>
+            <li class=""><a href="#">Материалы</a></li>
+            <li class=""><a href="#">Техника</a></li>
+            <li class=""><a href="#">Инструмент</a></li>
+            <li class=""><a href="#">Спецпредложения</a></li>
           </ul>
         </div>
       </div>
@@ -341,20 +368,18 @@
           <p> &copy; 2010–2019 Компания «Техномарт» Все права защищены</p>
         </div>
         <!-- Социальные сети -->
-        <div class="footer-social">
-          <ul class="ul-style">
-            <li class="li-style social-btn-vk">
-              <a href="#" class="social-vk"><span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class=" li-style social-btn-fb">
-              <a href="#" class="social-btn-fb"><span class="visually-hidden">Фейсбук</span></a>
-            </li>
-            <li class="li-style social-btn-insta">
-              <a href="#" class="social-btn-inst"><span class="visually-hidden">Инстаграм</span></a>
-            </li>
-          </ul>
-        </div>
+        <ul class="ul-style footer-social">
+          <li class=" social-btn-vk">
+            <a href="#" class="social-vk"><span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="  social-btn-fb">
+            <a href="#" class="social-btn-fb"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li class=" social-btn-insta">
+            <a href="#" class="social-btn-inst"><span class="visually-hidden">Инстаграм</span></a>
+          </li>
+        </ul>
         <!-- Обратная связь -->
         <div class="feedback-email">
           <p>Обратная связь:</p>
