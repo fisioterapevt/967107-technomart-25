@@ -13,6 +13,7 @@
 
 <body class="catalog-page">
   <header class="main-header-catalog">
+
     <!-- Секция верхней части header -->
     <div class="top-block">
       <div class="container">
@@ -74,11 +75,9 @@
                 </g>
               </svg>
             </li>
-            <!-- <div class="account-list"> -->
             <li><a href="#" class="my-orders">Мои заказы</a></li>
             <li><span class="point"></span></li>
             <li><a href="#" class="personal-account">Личный кабинет</a></li>
-            <!-- </div> -->
           </ul>
         </div>
       </div>
@@ -111,26 +110,15 @@
         </ul>
       </div>
       <h1 class="perforator-title">Перфораторы</h1>
-      <!--Всплывающее окно "Товар добавлен в корзину"-->
-      <div class="order-status">
-        <div class="order-white">
-          <span class="icon-mark"></span>
-          <p>Товар добавлен в корзину!</p>
-          <button class="modal-close" type="button">Закрыть</button>
-        </div>
-        <div class="order-gray">
-          <a class="checkout button-red" href="#">Оформить заказ</a>
-          <button class="continue-shopping" type="button">Продолжить покупки</button>
-        </div>
-      </div>
+
       <!-- Фильтр выбора производителя и питания-->
       <div class="main-columns">
-        <section class="range-options">
+        <section class="options">
           <h2 class="visually-hidden">Выбор опций</h2>
           <h3 class="filter">Фильтр</h3>
           <h3 class="price">Цена:</h3>
 
-          <form class="input-price" action="#">
+          <form class="choice-of-options" action="#">
             <div class="slider-price">
               <input type="range" min="0" max="30000" step="10" value="50">
               <span class="green-range"></span>
@@ -143,9 +131,6 @@
               <input type="text" name="max" placeholder="30000">
             </div>
             <button class="visually-hidden" type="submit">Отправить</button>
-          </form>
-
-          <form action="#" name="manufacturers">
             <fieldset class="fieldset-style manufacturers">
               <legend>Производители:</legend>
               <label>
@@ -311,8 +296,8 @@
           </ul>
           <!-- Пагинация -->
           <ul class="ul-style pagination-list">
-            <li class="pagination-item-current"><a href="#">1</a></li>
-            <li class=""><a>2</a></li>
+            <li class=""><a class="pagination-item-current" href="#">1</a></li>
+            <li class=""><a href="#">2</a></li>
             <li class=""><a href="#">3</a></li>
             <li class="next"><a href="#">Следующая</a></li>
           </ul>
@@ -403,6 +388,18 @@
       </div>
     </div>
   </footer>
+  <!--Всплывающее окно "Товар добавлен в корзину"-->
+  <div class="order-status">
+    <div class="order-white">
+      <span class="icon-mark"></span>
+      <p>Товар добавлен в корзину!</p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </div>
+    <div class="order-gray">
+      <a class="checkout button-red" href="#">Оформить заказ</a>
+      <button class="continue-shopping" type="button">Продолжить покупки</button>
+    </div>
+  </div>
 </body>
 
 </html>
