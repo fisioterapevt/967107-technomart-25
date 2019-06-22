@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link
     href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7cPT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
@@ -18,15 +18,14 @@
       <div class="container">
         <div class="top-block-wrap">
           <!-- Логотип -->
-          <div class="header-logo">
-            <a href="#" class="logo"></a>
-          </div>
+          <a class="header-logo" href="#" aria-label="Логотип"></a>
           <!-- Форма поиска -->
           <div class="search">
             <form action="#">
-              <input type="search" name="search" placeholder="Поиск:">
+              <label for="search" class="visually-hidden">Поиск</label>
+              <input type="search" id="search" placeholder="Поиск:">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-                <path fill="#ffffff"
+                <path
                   d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
               </svg>
               <button class="visually-hidden" type="submit">Отправить</button>
@@ -36,7 +35,7 @@
           <!-- Закладки -->
           <a class="bookmarks" href="#">Закладки: 0</a>
           <!-- Корзина -->
-          <a class="basket" href="#">Корзина: 0</a>
+          <a class="cart" href="cart.html">Корзина: 0</a>
           <!--  Кнопка оформить заказ -->
           <a class="btn-checkout" href="#">Оформить заказ</a>
         </div>
@@ -62,14 +61,14 @@
         <div class="user-in">
           <ul class="ul-style">
             <li class="login-link">
-              <a href="#">
+              <a href="login.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
                   <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" />
                   <path fill="#c5c5c5"
                     d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
                 </svg>Войти</a>
             </li>
-            <li class="check-in-link"><a href="#">Регистрация</a></li>
+            <li class="check-in-link"><a href="check-in.html">Регистрация</a></li>
           </ul>
         </div>
       </div>
@@ -78,9 +77,9 @@
     <div class="container">
       <nav class="main-navigation">
         <ul class="ul-style main-menu">
-          <li class=""><a href="#">Главная</a></li>
+          <li class=""><a href="index.html">Главная</a></li>
           <li class=""><a href="#">Компания</a></li>
-          <li class=""><a href="#">Каталог</a></li>
+          <li class=""><a href="catalog.html">Каталог</a></li>
           <li class=""><a href="#">Новости</a></li>
           <li class=""><a href="#">Спецпредложения</a></li>
           <li class=""><a href="#">Доставка</a></li>
@@ -115,14 +114,19 @@
         <!-- Слайдер -->
         <div class="offers-down">
           <div class="slider">
-            <p class="upper">Дрели</p>
-            <p class="lower">Cocедям на радость!</p>
-            <div class="slide slide-1"></div>
-            <div class="slide slide-2"></div>
-            <div class="slide slide-3"></div>
-            <button class="slider-control-left" type="button">Влево</button>
-            <button class="slider-control-right" type="button">Вправо</button>
-            <a class="button-red" href="#">Открыть Каталог</a>
+            <div class="slide slide-1">
+              <h3 class="upper">Дрели</h3>
+              <p class="lower">Cocедям на радость!</p>
+              <img src="img/slider.jpg" width="620" height="266" alt="изображение рабочего с дрелью">
+            </div>
+            <div class="slide slide-2">
+              <h3 class="upper">Перфораторы</h3>
+              <p class="lower">Настоящие мужские игрушки</p>
+              <img src="img/slider-2.jpg" width="620" height="266" alt="изображение рабочего с перфоратором">
+            </div>
+            <button class="slider-control-left" type="button" aria-label="Стрелка влево"></button>
+            <button class="slider-control-right" type="button" aria-label="Стрелка вправо"></button>
+            <a class="button-red" href="catalog.html">Открыть Каталог</a>
             <div class="switches">
               <label>
                 <input type="radio" name="slide" value="slide1">
@@ -158,7 +162,7 @@
           <ul class="ul-style popular-list">
             <li class=" popular-item">
               <div class="catalog-buttons">
-                <a class="buy-item" href="#">Купить</a>
+                <a class="buy-item" href="cart.html">Купить</a>
                 <button class="to-bookmarks" type="button">В закладки</button>
               </div>
               <img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 9000">
@@ -169,7 +173,7 @@
             </li>
             <li class=" popular-item">
               <div class="catalog-buttons">
-                <a class="buy-item" href="#">Купить</a>
+                <a class="buy-item" href="cart.html">Купить</a>
                 <button class="to-bookmarks" type="button">В закладки</button>
               </div>
               <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
@@ -180,7 +184,7 @@
             </li>
             <li class=" popular-item">
               <div class="catalog-buttons">
-                <a class="buy-item" href="#">Купить</a>
+                <a class="buy-item" href="cart.html">Купить</a>
                 <button class="to-bookmarks" type="button">В закладки</button>
               </div>
               <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
@@ -192,7 +196,7 @@
             <li class=" popular-item">
               <div class="new">новинка</div>
               <div class="catalog-buttons">
-                <a class="buy-item" href="#">Купить</a>
+                <a class="buy-item" href="cart.html">Купить</a>
                 <button class="to-bookmarks" type="button">В закладки</button>
               </div>
               <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 2000">
@@ -210,14 +214,46 @@
         </div>
         <div class="popular-manufacturers">
           <ul class=" ul-style manufacturers-list">
-            <li class="bosсh"><a href="#"></a></li>
-            <li class="makita"><a href="#"></a></li>
-            <li class="dewalt"><a href="#"></a></li>
-            <li class="interskol"><a href="#"></a></li>
-            <li class="hitachi"><a href="#"></a></li>
-            <li class="lg"><a href="#"></a></li>
-            <li class="aeg"><a href="#"></a></li>
-            <li class="metabo"><a href="#"></a></li>
+            <li>
+              <a href="bosch.html">
+                <img src="img/bosch.png" width="126" height="37" alt="bosh">
+              </a>
+            </li>
+            <li>
+              <a href="makita.html">
+                <img src="img/makita.png" width="123" height="40" alt="makita">
+              </a>
+            </li>
+            <li>
+              <a href="dewalt.html">
+                <img src="img/dewalt.png" width="146" height="44" alt="dewalt">
+              </a>
+            </li>
+            <li>
+              <a href="interskol.html">
+                <img src="img/interskol.png" width="200" height="88" alt="interskol">
+              </a>
+            </li>
+            <li class="hitachi">
+              <a href="hitachi.html">
+                <img src="img/hitachi.png" width="169" height="31" alt="hitachi">
+              </a>
+            </li>
+            <li class="lg">
+              <a href="lg.html">
+                <img src="img/lg.png" width="121" height="73" alt="lg">
+              </a>
+            </li>
+            <li class="aeg">
+              <a href="aeg.html">
+                <img src="img/aeg.png" width="151" height="96" alt="aeg">
+              </a>
+            </li>
+            <li class="metabo">
+              <a href="metabo.html">
+                <img src="img/metabo.png" width="204" height="69" alt="metabo">
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -234,19 +270,33 @@
         </div>
         <div class="our-servises">
           <ul class="ul-style servises-list">
-            <li class="" tabindex="0">Доставка</li>
-            <li class="" tabindex="0">Гарантия</li>
-            <li class="" tabindex="0">Кредит</li>
+            <li class="delivery-link servise-current" tabindex="0">Доставка</li>
+            <li class="warranty-link" tabindex="0">Гарантия</li>
+            <li class="credit-link" tabindex="0">Кредит</li>
           </ul>
-          <div class="delivery">
+          <div class="delivery-slide modal-show">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
+            <img class="delivery" src="img/truck.png" width="468" height="261" alt="Изображение грузовика">
           </div>
-          <div class="track">
-            <img src="img/truck.png" alt="Изображение грузовика">
+          <div class="warranty-slide">
+            <h2>Гарантия</h2>
+            <p>Если купленный у нас товар поломается или заискрит,
+              а также в случае пожара, спровоцированного его возгаранием,
+              вы всегда можете быть уверены в нашей гарантии.
+              Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.</p>
+            <img class="warranty" src="img/warranty.png" width="389" height="283" alt="Гарантия сто процентов">
+          </div>
+          <div class="credit-slide">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще!
+              Кредитные консультанты придут вам на помощь.</p>
+            <a class="button-red credit-link" href="credit.html">Отправить заявку</a>
+            <img class="credit" src="img/credit.png" width="465" height="285" alt="Кредитный договор">
           </div>
         </div>
       </div>
@@ -270,24 +320,15 @@
             <li><span class="dash"></span>Автотрейдинг</li>
             <li><span class="dash"></span>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button-red" href="#">Подробнее о компании</a>
+          <a class="button-red" href="more-about-company.html">Подробнее о компании</a>
         </section>
         <!-- Контакты  с картой-->
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,</p>
           <p> заехав в наш офис:</p>
-          <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003049!2d30.320858716051575!3d59.938719169054266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sth!4v1557504616308!5m2!1sru!2sth"
-            width="300" height="158" allowfullscreen>
-          </iframe>
-          <a class="button-red" href="#">Заблудились? Напишите нам!</a>
-        </section>
-        <!-- Всплывающее окно "Карта" -->
-        <section class="popap-map">
-          <h2 class="visually-hidden">Как доехать до офиса</h2>
-          <img src="img/map.jpg" width="940" height="446" alt="карта проезда до офиса">
-          <button class="modal-close" type="button">Закрыть</button>
+          <img class="map" src="img/map.png" width="300" height="158" alt="карта проезда до офиса" tabindex="0">
+          <a class="button-red feedback-link" href="feedback-form.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>
@@ -297,12 +338,9 @@
     <!-- Светлая часть футера -->
     <div class="footer-light">
       <div class="container light">
-
         <div class="footer-logo-address">
           <!-- Логотип футера -->
-          <div class="footer-logo">
-            <a href="#" class="logo"></a>
-          </div>
+          <a class="footer-logo" href="index.html"></a>
           <!-- Адрес и телефон в футере -->
           <div class="address-down">
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -314,7 +352,7 @@
           <ul class="ul-style footer-menu-above">
             <li class=""><a href="#">Компания</a></li>
             <li class=""><a href="#">Новости</a></li>
-            <li class=""><a href="#">Каталог</a></li>
+            <li class=""><a href="catalog.html">Каталог</a></li>
             <li class=""><a href="#">Доставка</a></li>
             <li class=""><a href="#">Контакты</a></li>
           </ul>
@@ -356,7 +394,7 @@
         </div>
         <div class="footer-developed">
           <p>Разработано — </p>
-          <a class="footer-htmlacademy" href="https://htmlacademy.ru">htmlacademy.ru</a>
+          <a class="footer-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </div>
       </div>
     </div>
@@ -364,14 +402,14 @@
   <!--Всплывающее окно "Форма обратной связи"-->
   <section class="modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <form action="#" class="feedback-form" method="post">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-block">
         <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+        <input class="feedback-name" type="text" id="name" placeholder="Имя Фамилия">
       </div>
       <div class="form-block">
         <label for="email">Ваш e-mail:</label>
-        <input type="text" name="email" id="email" placeholder="email@example.com" required>
+        <input class="feedback-post" type="text" id="email" placeholder="email@example.com">
       </div>
       <label for="text">Текст письма:</label>
       <textarea class="feedback-textarea" name="text" id="text" cols="30" rows="6"
@@ -379,10 +417,34 @@
       <div class="feedback-style">
         <button class="feedback-btn button-red" type="submit">Отправить</button>
       </div>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close close-feedback" type="button">Закрыть</button>
     </form>
   </section>
-
+  <!-- Всплывающее окно "Карта" -->
+  <section class="popup-map">
+    <h2 class="visually-hidden">Как доехать до офиса</h2>
+    <iframe class="inter-map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716026983!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sth!4v1560515202247!5m2!1sru!2sth"
+      width="940" height="446" style="border:0" allowfullscreen>
+    </iframe>
+    <p><img src="img/map-popup.jpg" width="940" height="446"
+        alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
+    <button class="modal-close close-map" type="button">Закрыть</button>
+  </section>
+  <!--Всплывающее окно "Товар добавлен в корзину"-->
+  <div class="order-status">
+    <div class="order-white">
+      <span class="icon-mark"></span>
+      <p>Товар добавлен в корзину!</p>
+      <button class="modal-close close-order" type="button">Закрыть</button>
+    </div>
+    <div class="order-gray">
+      <a class="checkout button-red" href="#">Оформить заказ</a>
+      <button class="continue-shopping" type="button">Продолжить покупки</button>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
