@@ -23,12 +23,6 @@ body {
   background-color: #ffffff;
 }
 
-input,
-textarea,
-iframe {
-  border: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -39,6 +33,11 @@ a {
   color: #000000;
 }
 
+.input-style,
+.textarea-style,
+.iframe-style {
+  border: none;
+}
 .ul-style {
   list-style-type: none;
   margin: 0;
@@ -85,10 +84,6 @@ a {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-button {
-  cursor: pointer;
 }
 
 .button-red {
@@ -1738,6 +1733,8 @@ span.current path {
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
+
+  cursor: pointer;
 
 }
 
